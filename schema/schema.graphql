@@ -1,0 +1,15 @@
+type User {
+  name: String!
+  email: String!
+  password: String!
+  id: ID
+}
+
+type Query {
+  getUser(id: ID): User
+  getUsers: [User]
+}
+
+type Mutation {
+  deleteUser(id: ID): Boolean
+}
