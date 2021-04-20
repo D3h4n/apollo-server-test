@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc",
-    "start": "node dist/index",
+    "start": "node dist/www/web",
     "dev": "npm run build && npm start",
     "db": "json-server --watch db.json"
   },

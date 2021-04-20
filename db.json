@@ -5,6 +5,12 @@
       "email": "b@b.com",
       "password": "$2b$10$2KBOkqL9sBMaFeSUEc7Bc.lmXdHugjbO6xQ2VwHIzDYrEcQmIXLZu",
       "id": 4
+    },
+    {
+      "name": "Deshawn",
+      "email": "a@a.com",
+      "password": "$2b$10$S56YiV8T1.I7DsXUd6qI1udDJlMhdb2CrYO50i89VdvdFCiUJDCY6",
+      "id": 5
     }
   ]
 }
