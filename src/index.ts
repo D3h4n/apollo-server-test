@@ -13,8 +13,7 @@ import UserRoute from './routes/user/user.config';
 // setup
 dotenv.config();
 
-const port = process.env.PORT || 5050;
-const app = express();
+export const app = express();
 const routes: CommonRoute[] = [];
 
 initPassport(passport);
@@ -46,10 +45,4 @@ routes.push(new UserRoute(app, '/api/user'));
 
 app.use((_req, res) => {
   res.status(404).send('That page was not found');
-});
-
-app.listen(port, () => {
-  console.log(`Loaded ${routes.length} routes`);
-  routes.forEach((route) => console.log(`\t${route.name}`));
-  console.log(`Listening on port ${port}`);
 });
